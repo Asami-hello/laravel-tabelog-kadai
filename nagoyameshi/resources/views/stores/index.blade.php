@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/store.png') }}">店舗一覧</h1>
+<h1 class="page_title" style="background-image: url('{{ asset('storage/images/store.png') }}')">店舗一覧</h1>
 
 <div class="container">
     <div class="col-12"> 

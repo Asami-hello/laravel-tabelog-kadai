@@ -13,9 +13,7 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/9cb462481a.js" crossorigin="anonymous"></script>
 
-        <!-- ここはngrokでの確認が終わったら下のコード戻すす -->
-        <!-- <link href="{{ asset('css/nagoyameshi.css') }}" rel="stylesheet"> -->
-        <link href="/kadai_002/nagoyameshi/public/css/nagoyameshi.css" rel="stylesheet">
+        <link href="{{ asset('css/nagoyameshi.css') }}" rel="stylesheet">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
