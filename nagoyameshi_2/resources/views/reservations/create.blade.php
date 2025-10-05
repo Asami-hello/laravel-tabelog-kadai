@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/reservation.png') }}">予約</h1>
+<h1 class="page_title">予約</h1>
 
 <h2 class="store_title">{{ $store->store_name }}</h2>
 

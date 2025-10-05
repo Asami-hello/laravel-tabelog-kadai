@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="page_title" style="background-color: #999">お気に入り一覧</h1>
+<h1 class="page_title">お気に入り一覧</h1>
 <div class="container mt-3">
     <div class="row justify-content-start">
         <p class="mt-2">お気に入り店舗数 <strong style="font-size: 25px;">{{ $favorite_stores->count() }}</strong> 件です。</p>

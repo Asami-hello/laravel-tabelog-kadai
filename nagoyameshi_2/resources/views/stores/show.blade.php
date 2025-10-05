@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-color: #999">店舗詳細</h1>
+<h1 class="page_title">店舗詳細</h1>
 
 <h2 class="store_title">{{ $store->store_name }}</h2>
 

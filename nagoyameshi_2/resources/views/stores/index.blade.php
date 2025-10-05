@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="page_title" style="background-color: #999">店舗一覧</h1>
+<h1 class="page_title">店舗一覧</h1>
 
 <div class="container">
     <div class="col-12"> 

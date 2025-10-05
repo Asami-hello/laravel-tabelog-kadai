@@ -71,6 +71,12 @@
        </div>
    </div>
 </div>
+<div class="mt-3 text-right">
+    <a class="btn admin_login_btn" href="http://nagoyameshi-imasa-81b4039f351b.herokuapp.com/admin/auth/login">
+        <i class="fa-solid fa-book-open-reader" style="font-size: 20px"></i>
+        <p>管理者用<br>ログイン</p> 
+    </a>
+</div>
 <a href="{{ route('stores.index') }}" class="btn btn-back"><i class="fa-solid fa-angle-left"></i>もどる</a>
 
 @endsection

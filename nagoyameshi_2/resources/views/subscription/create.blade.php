@@ -11,7 +11,7 @@
 @endpush
 
 @section('content')
-<h1 class="page_title mb-5 text-center" style="background-color: #999">有料会員プラン登録</h1>
+<h1 class="page_title mb-5 text-center">有料会員プラン登録</h1>
 
     <div class="container nagoyameshi-container">
         <div class="row justify-content-center">

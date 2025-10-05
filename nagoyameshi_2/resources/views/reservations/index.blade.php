@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-color: #999">予約一覧</h1>
+<h1 class="page_title">予約一覧</h1>
 
 <div class="container text-center">
     @if (session('success'))
