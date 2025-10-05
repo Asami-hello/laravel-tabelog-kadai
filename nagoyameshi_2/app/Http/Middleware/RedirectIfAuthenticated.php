@@ -19,6 +19,10 @@ class RedirectIfAuthenticated
      */
     public function handle(Request $request, Closure $next, ...$guards)
     {
+        if ($request->header('x-forwarded-proto') == 'https') {
+            $request->server->set('HTTPS', 'on');
+        }
+
         $guards = empty($guards) ? [null] : $guards;
 
         foreach ($guards as $guard) {
