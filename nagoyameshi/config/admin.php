@@ -407,4 +407,7 @@ return [
     'extensions' => [
 
     ],
+
+    'secure' => env('ADMIN_SECURE', true),
+    
 ];
