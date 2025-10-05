@@ -5,9 +5,7 @@
     <script>
         const stripeKey = "{{ $stripeKey }}";
     </script>
-    <!-- ngrok終わったらもとに戻す -->
-    <!-- <script src="{{ asset('js/stripe.js') }}"></script> -->
-    <script src="/kadai_002/nagoyameshi/public/js/stripe.js"></script>
+    <script src="{{ asset('js/stripe.js') }}"></script>
 @endpush
 
 @section('content')
