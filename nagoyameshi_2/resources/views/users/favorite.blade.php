@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/favorite.png') }}">お気に入り一覧</h1>
+<h1 class="page_title" style="background-color: #999">お気に入り一覧</h1>
 <div class="container mt-3">
     <div class="row justify-content-start">
         <p class="mt-2">お気に入り店舗数 <strong style="font-size: 25px;">{{ $favorite_stores->count() }}</strong> 件です。</p>
@@ -31,7 +31,6 @@
                         </div>
                         <!-- その他 -->
                         <a href="{{ route('stores.show', $favorite_store->id) }}" class="favorite_link">
-                            <img src="{{ asset('storage/' . $favorite_store->image) }}" class="img-fluid m-2" style="width:250px; height: 180px; object-fit: cover;" alt="店舗写真{{ $favorite_store->name }}">
                             <h3 class="m-2">{{ $favorite_store->store_name }}</h3>
                             <p class="d-flex align-items-center justify-content-center m-2">
                                 <span>{{ $favorite_store->category->category_name }}</span>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/store.png') }}')">店舗一覧</h1>
+<h1 class="page_title" style="background-color: #999">店舗一覧</h1>
 
 <div class="container">
     <div class="col-12"> 
@@ -51,7 +51,6 @@
                 <div class="col-md-4 mb-4">
                     <div class="store-card border p-2 rounded d-flex flex-column align-items-center text-center h-100">
                         <a href="{{ route('stores.show', $store->id) }}" class="store_link text-decoration-none">
-                            <img class="img-fluid m-2" style="width:250px; height: auto;" src="{{ asset('storage/' . $store->image) }}" alt="店舗写真{{ $store->store_name }}">
                             <h3 class="m-2">{{ $store->store_name }}</h3>
                             <p class="d-flex align-items-center justify-content-center m-2">
                                 <span>{{ $store->category->category_name }}</span>

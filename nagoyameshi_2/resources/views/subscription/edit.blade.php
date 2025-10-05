@@ -9,7 +9,7 @@
 @endpush
 
 @section('content')
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/premium.png') }}">クレジットカード情報の編集</h1>
+<h1 class="page_title" style="background-color: #999">クレジットカード情報の編集</h1>
 <div class="container">
     <div class="row justify-content-center">
         <h3 class="mt-5 mb-4 text-center">登録済みのクレジットカード情報</h3>

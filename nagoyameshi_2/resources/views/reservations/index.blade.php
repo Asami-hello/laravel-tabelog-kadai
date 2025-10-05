@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/reservation.png') }}">予約一覧</h1>
+<h1 class="page_title" style="background-color: #999">予約一覧</h1>
 
 <div class="container text-center">
     @if (session('success'))
@@ -17,7 +17,6 @@
                     <div class="row mb-4 p-3 reservation-info" style="position: relative; min-height: 250px;">
                         <div class="col-md-5 mx-auto">
                             <a href="{{ route('stores.show', ['store' => $reservation->store->id]) }}" class="text-decoration-none text-dark">
-                                <img src="{{ asset('storage/' . $reservation->store->image) }}" class="img-fluid m-2" style="width:200px; height: auto; object-fit: cover;" alt="店舗写真{{ $reservation->store->store_name }}">
                                 <p class="reservation_store_info">
                                     <span style="font-weight: bold;">{{ $reservation->store->store_name }}</span><br>
                                     <span>{{ $reservation->store->category->category_name }}</span>

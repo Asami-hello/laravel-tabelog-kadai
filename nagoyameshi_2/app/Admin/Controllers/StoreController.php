@@ -13,6 +13,7 @@ use Goodby\CSV\Import\Standard\Lexer;
 use Goodby\CSV\Import\Standard\Interpreter;
 use Goodby\CSV\Import\Standard\LexerConfig;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class StoreController extends AdminController
 {
@@ -36,7 +37,7 @@ class StoreController extends AdminController
         $grid->column('category.category_name', __('Category Name'));
         $grid->column('store_name', __('Store name'));
         $grid->column('image', __('Image'))->display(function ($image) {
-            return "<img src='" . asset("storage/{$image}") . "' style='max-width:100px'/>";
+            return "<img src='" . Storage::url($image) . "' style='max-width:100px'/>";
         });
 
         $grid->column('store_description', __('Store description'));
@@ -77,7 +78,7 @@ class StoreController extends AdminController
         $show->field('category.category_name', __('Category Name'));
         $show->field('store_name', __('Store name'));
         $show->field('image', __('Image'))->as(function ($image) {
-            return "<img src='" . asset("storage/{$image}") . "' style='max-width:300px' />";
+            return "<img src='" .Storage::url($image) . "' style='max-width:300px' />";
         })->unescape();
         $show->field('store_description', __('Store description'));
         $show->field('address', __('Address'));
@@ -103,9 +104,7 @@ class StoreController extends AdminController
 
         $form->select('category_id', __('Category Name'))->options(Category::all()->pluck('category_name', 'id'));
         $form->text('store_name', __('Store name'));
-        $form->image('image', __('Image'))->disk('public')->default(function ($form) {
-            return $form->model()->image ? asset("storage/{$form->model()->image}") : null;
-        });  
+        $form->image('image', __('Image'));
         $form->textarea('store_description', __('Store description'));
         $form->text('address', __('Address'));
         $form->text('postal_code', __('Postal code'));

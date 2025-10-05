@@ -1,9 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-light nagoyameshi-header-container">
     <div class="container">
-        <a class="navbar-logo" href="{{ route('stores.index') }}">
-            <img src="{{ asset('storage/images/logo.png') }}" alt="ロゴマーク" class="logo_img">
+        <a class="d-flex justify-content-center align-items-center navbar-logo p-0 m-0" href="{{ route('stores.index') }}">
+            <p>Nagoyameshi</p>
         </a>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mr-5 mt-2">
                 @guest

@@ -5,6 +5,13 @@ body {
     color: #333;
 }
 
+.navbar-logo {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .page_title {
     font-size: 46px;
     text-align: center;

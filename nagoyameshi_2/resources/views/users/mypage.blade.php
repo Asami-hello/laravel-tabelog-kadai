@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/mypage.png') }}">マイページ</h1>
+<h1 class="page_title" style="background-color: #999">マイページ</h1>
 
 <div class="container">
     <div class="row">

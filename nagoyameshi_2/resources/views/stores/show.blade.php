@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/store.png') }}">店舗詳細</h1>
+<h1 class="page_title" style="background-color: #999">店舗詳細</h1>
 
 <h2 class="store_title">{{ $store->store_name }}</h2>
 
@@ -14,9 +14,6 @@
 <div class="container">
     <div class="row">
         <div class="col-12 m-3 d-flex flex-row">
-            <div class="col-md-5 me-5">
-                <img class="img-fluid store_show_img me-2 me-md-4" src="{{ asset('storage/' . $store->image) }}" alt="店舗写真{{ $store->store_name }}">
-            </div>
 
             <div class="col-md-7">
                 <table class="store-show-info">

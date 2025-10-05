@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/premium.png') }}">有料会員プラン解約</h1>
+<h1 class="page_title" style="background-color: #999">有料会員プラン解約</h1>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-5 col-lg-6 col-md-8">

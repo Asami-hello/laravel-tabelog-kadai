@@ -63,6 +63,10 @@ return [
             'url' => env('APP_URL'). '/storage',
         ],
 
+        'cloudinary' => [
+            'driver' => 'cloudinary',
+        ],
+
     ],
 
     /*

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1 class="page_title" style="background-image: url('{{ asset('storage/images/mypage.png') }}">会員情報詳細</h1>
+<h1 class="page_title" style="background-color: #999">会員情報詳細</h1>
 
 <div class="container">
     <div class="row justify-content-center">
